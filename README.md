@@ -15,8 +15,8 @@ Use this module through transformer.
 ### Commandline
 
 ```
-> echo '<SAMPLE INPUT>' | transform ascii base64
-<SAMPLE OUTPUT>
+> echo 'beep boop' | transform ascii base64
+YmVlcCBib29w
 ```
 
 ### Javascript
@@ -24,5 +24,5 @@ Use this module through transformer.
 ```js
 var transformer = require('dat-transformer');
 var tAsciiToBase64 = transformer('ascii', 'base64');
-tAsciiToBase64('<SAMPLE INPUT>'); // <SAMPLE OUTPUT>
+tAsciiToBase64('beep boop'); // 'YmVlcCBib29w'
 ```
