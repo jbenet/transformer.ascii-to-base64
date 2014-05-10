@@ -1,0 +1,19 @@
+{
+  "name": "transformer.ascii-to-base64",
+  "version": "0.0.1",
+  "description": "transformer conversion: ascii to base64",
+  "main": "index.js",
+  "transformer": "transformer.jsonld",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "transformer",
+    "transformer-conversion"
+  ],
+  "dependencies": {
+    "transformer.ascii": "0.0.3",
+    "transformer.base64": "0.0.1",
+    "dat-transformer": "~0.1.5"
+  }
+}
