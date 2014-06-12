@@ -1,9 +1,9 @@
-var transformer = require('dat-transformer');
-var tAscii = transformer('ascii');
-var tBase64 = transformer('base64');
+var Conversion = require('transformer-conversion');
+var tAscii = require('transformer.ascii');
+var tBase64 = require('transformer.base64');
 // require any other modules you may need here.
 
-module.exports = transformer.Conversion(tAscii, tBase64, convert);
+module.exports = Conversion(tAscii, tBase64, convert);
 
 function convert(ascii) {
   var buf = new Buffer(ascii, 'ascii');
